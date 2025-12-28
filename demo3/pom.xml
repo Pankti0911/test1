@@ -32,6 +32,13 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
+         <dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <scope>runtime</scope>
+</dependency>
+
+
         <!-- MySQL Connector -->
         <dependency>
             <groupId>com.mysql</groupId>
@@ -56,3 +63,4 @@
         </plugins>
     </build>
 </project>
+
