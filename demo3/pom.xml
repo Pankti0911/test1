@@ -3,15 +3,6 @@
     <artifactId>postgresql</artifactId>
     <scope>runtime</scope>
 </dependency>
-
-   <!-- MySQL Connector -->
-        <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-
-
         <!-- Lombok (optional for getters/setters) -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -29,5 +20,6 @@
         </plugins>
     </build>
 </project>
+
 
 
