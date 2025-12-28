@@ -21,8 +21,16 @@ public class RegisterController {
 
     @PostMapping("/register")
     @ResponseBody
-    public String saveUser(@RequestBody User user) {
+    public String saveUser(@ModelAttribute User user) {
+
+        // DEBUG LOG (VERY IMPORTANT)
+        System.out.println(">>> SAVING USER");
+        System.out.println(user.getName());
+        System.out.println(user.getEmail());
+        System.out.println(user.getMessage());
+
         userRepository.save(user);
-        return "success";
+
+        return "Data submitted successfully!";
     }
 }
