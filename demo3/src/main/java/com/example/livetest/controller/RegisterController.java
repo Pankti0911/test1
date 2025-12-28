@@ -23,11 +23,10 @@ public class RegisterController {
     @ResponseBody
     public String saveUser(@ModelAttribute User user) {
 
-        // DEBUG LOG (VERY IMPORTANT)
-        System.out.println(">>> SAVING USER");
-        System.out.println(user.getName());
-        System.out.println(user.getEmail());
-        System.out.println(user.getMessage());
+        System.out.println(">>> FORM SUBMITTED");
+        System.out.println("Name: " + user.getName());
+        System.out.println("Email: " + user.getEmail());
+        System.out.println("Message: " + user.getMessage());
 
         userRepository.save(user);
 
