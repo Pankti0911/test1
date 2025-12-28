@@ -25,4 +25,5 @@ public class RegisterController {
         userRepository.save(user);
         return "success";
     }
-}  i want that it works perfectly
+}  
+
