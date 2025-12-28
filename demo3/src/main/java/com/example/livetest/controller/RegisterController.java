@@ -21,15 +21,8 @@ public class RegisterController {
 
     @PostMapping("/register")
     @ResponseBody
-    public String saveUser(@ModelAttribute User user) {
-
-        System.out.println(">>> FORM SUBMITTED");
-        System.out.println("Name: " + user.getName());
-        System.out.println("Email: " + user.getEmail());
-        System.out.println("Message: " + user.getMessage());
-
+    public String saveUser(@RequestBody User user) {
         userRepository.save(user);
-
-        return "Data submitted successfully!";
+        return "success";
     }
-}
+}  i want that it works perfectly
